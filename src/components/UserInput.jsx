@@ -1,4 +1,4 @@
-import Input from "./Input";
+import Input from "./Input.jsx";
 
 export default function UserInput({ onGetValues, userInputs }) {
   return (

@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import UserInput from "./components/UserInput";
-import ResultTable from "./components/ResultTable";
+import Header from "./components/Header.jsx";
+import UserInput from "./components/UserInput.jsx";
+import ResultTable from "./components/ResultTable.jsx";
 import { useState } from "react";
 
 function App() {
