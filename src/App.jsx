@@ -11,6 +11,8 @@ function App() {
     duration: 10,
   });
 
+  const inputIsValid = currentValues.duration >= 1;
+
   function getInputValues(field, value) {
     setCurrentValues((prevValues) => {
       let prevValuesCopy = { ...prevValues, [field]: +value };
@@ -21,8 +23,15 @@ function App() {
   return (
     <main>
       <Header />
-      <UserInput onGetValues={getInputValues} userInputs={currentValues} />
-      <ResultTable currentData={currentValues} />
+      <UserInput
+        onGetValues={getInputValues}
+        userInputs={currentValues}
+      />
+      {inputIsValid ? (
+        <ResultTable currentData={currentValues} />
+      ) : (
+        <p className="center">Please enter a duration greater than zero.</p>
+      )}
     </main>
   );
 }
