@@ -10,6 +10,7 @@ export default function UserInput({ onGetValues, userInputs }) {
           id="initialInvestment"
           type="number"
           value={userInputs.initialInvestment}
+          required
         />
         <Input
           label="annual investment"
@@ -17,6 +18,7 @@ export default function UserInput({ onGetValues, userInputs }) {
           id="annualInvestment"
           type="number"
           value={userInputs.annualInvestment}
+          required
         />
       </div>
       <div className="input-group">
@@ -26,6 +28,7 @@ export default function UserInput({ onGetValues, userInputs }) {
           id="expectedReturn"
           type="number"
           value={userInputs.expectedReturn}
+          required
         />
         <Input
           label="duration"
@@ -33,6 +36,7 @@ export default function UserInput({ onGetValues, userInputs }) {
           id="duration"
           type="number"
           value={userInputs.duration}
+          required
         />
       </div>
     </div>
